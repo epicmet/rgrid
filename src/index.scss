@@ -1,0 +1,168 @@
+// CSS VARS
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 960px,
+  lg: 1200px,
+  xl: 1920px,
+);
+
+$bgColors: (
+  "primary": var(--primary),
+  "secondary": var(--secondary),
+  "success": var(--success),
+  "danger": var(--danger),
+);
+
+$sizePadding: (
+  "sm": 5px 15px,
+  "md": 10px 20px,
+  "lg": 15px 25px,
+);
+
+$textColors: (
+  "primary": var(--primary-text),
+  "secondary": var(--secondary-text),
+  "success": var(--success-text),
+  "danger": var(--danger-text),
+);
+
+$colors: "primary", "secondary", "success", "danger", "transparent";
+$variants: "contained", "outlined", "transparent";
+$sizes: "sm", "md", "lg";
+
+// Actural styles
+.grid__ {
+  &row {
+    display: flex;
+
+    --columns: var(--xs-columns);
+    --gap: var(--xs-gap);
+
+    gap: calc(var(--gap) * var(--gap-base));
+  }
+
+  &item {
+    --width: var(--xs-width);
+    --initialbasis: calc(var(--width, 0) / var(--columns, 12) * 100%);
+    flex-basis: calc(var(--initialbasis) - (var(--gap) * var(--gap-base)));
+  }
+
+  &wrap__ {
+    &wrap {
+      flex-wrap: wrap;
+    }
+    &nowrap {
+      flex-wrap: nowrap;
+    }
+    &wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+  }
+
+  &direction__ {
+    &column-reverse {
+      flex-direction: column-reverse;
+    }
+    &column {
+      flex-direction: column;
+    }
+    &row-reverse {
+      flex-direction: row-reverse;
+    }
+    &row {
+      flex-direction: row;
+    }
+  }
+
+  &justify-content__ {
+    &flexStart {
+      justify-content: flex-start;
+    }
+    &center {
+      justify-content: center;
+    }
+    &flexEnd {
+      justify-content: flex-end;
+    }
+    &spaceBetween {
+      justify-content: space-etween;
+    }
+    &spaceAround {
+      justify-content: space-around;
+    }
+    &spaceEvenly {
+      justify-content: space-evenly;
+    }
+  }
+
+  &align-items__ {
+    &flexStart {
+      align-items: flex-start;
+    }
+    &center {
+      align-items: center;
+    }
+    &flexEnd {
+      align-items: flex-end;
+    }
+    &stretch {
+      align-items: stretch;
+    }
+    &baseline {
+      align-items: baseline;
+    }
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, "sm")) {
+  .grid__ {
+    &row {
+      --columns: var(--sm-columns);
+      --gap: var(--sm-gap);
+    }
+
+    &item {
+      --width: var(--sm-width);
+    }
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, "md")) {
+  .grid__ {
+    &row {
+      --columns: var(--md-columns);
+      --gap: var(--md-gap);
+    }
+
+    &item {
+      --width: var(--md-width);
+    }
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, "lg")) {
+  .grid__ {
+    &row {
+      --columns: var(--lg-columns);
+      --gap: var(--lg-gap);
+    }
+
+    &item {
+      --width: var(--lg-width);
+    }
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, "xl")) {
+  .grid__ {
+    &row {
+      --columns: var(--xl-columns);
+      --gap: var(--xl-gap);
+    }
+
+    &item {
+      --width: var(--xl-width);
+    }
+  }
+}

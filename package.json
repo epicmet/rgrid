@@ -1,0 +1,35 @@
+{
+  "name": "rgrid",
+  "version": "0.0.1",
+  "description": "A responsive grid component for React",
+  "source": "src/index.tsx",
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
+  "repository": "git@github.com:MahdiAghaei1/rgrid.git",
+  "author": "Mahdi Aghaei <mahd.aghaei@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@parcel/packager-ts": "2.5.0",
+    "@parcel/transformer-sass": "2.5.0",
+    "@parcel/transformer-typescript-types": "2.5.0",
+    "eslint": "^8.15.0",
+    "mprocs": "^0.2.3",
+    "parcel": "^2.5.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "clsx": "^1.1.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "scripts": {
+    "build": "parcel build",
+    "watch": "parcel watch",
+    "dev": "mprocs",
+    "sample": "cd ./example && yarn dev --port 3001"
+  }
+}

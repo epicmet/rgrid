@@ -1,0 +1,10 @@
+{
+  "procs": {
+    "dev": {
+      "shell": "yarn watch"
+    },
+    "sample": {
+      "shell": "yarn sample"
+    }
+  }
+}
