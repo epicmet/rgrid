@@ -29,7 +29,7 @@
   "scripts": {
     "build": "parcel build",
     "watch": "parcel watch",
-    "dev": "mprocs",
-    "sample": "cd ./example && yarn dev --port 3001"
+    "sample": "cd ./example && yarn dev --port 3001",
+    "dev": "mprocs"
   }
 }

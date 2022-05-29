@@ -1,9 +1,9 @@
 {
   "procs": {
-    "dev": {
+    "main-project": {
       "shell": "yarn watch"
     },
-    "sample": {
+    "sample-project": {
       "shell": "yarn sample"
     }
   }
