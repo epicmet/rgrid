@@ -1,4 +1,3 @@
-// CSS VARS
 $grid-breakpoints: (
   xs: 0,
   sm: 600px,
@@ -7,31 +6,6 @@ $grid-breakpoints: (
   xl: 1920px,
 );
 
-$bgColors: (
-  "primary": var(--primary),
-  "secondary": var(--secondary),
-  "success": var(--success),
-  "danger": var(--danger),
-);
-
-$sizePadding: (
-  "sm": 5px 15px,
-  "md": 10px 20px,
-  "lg": 15px 25px,
-);
-
-$textColors: (
-  "primary": var(--primary-text),
-  "secondary": var(--secondary-text),
-  "success": var(--success-text),
-  "danger": var(--danger-text),
-);
-
-$colors: "primary", "secondary", "success", "danger", "transparent";
-$variants: "contained", "outlined", "transparent";
-$sizes: "sm", "md", "lg";
-
-// Actural styles
 .grid__ {
   &row {
     display: flex;
