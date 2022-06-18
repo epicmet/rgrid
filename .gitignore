@@ -17,3 +17,5 @@ lerna-debug.log*
 node_modules
 .parcel-cache
 dist
+coverage
+.DS_Store

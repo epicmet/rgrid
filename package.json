@@ -10,13 +10,26 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.17.12",
     "@parcel/packager-ts": "2.5.0",
     "@parcel/transformer-sass": "2.5.0",
     "@parcel/transformer-typescript-types": "2.5.0",
+    "@testing-library/react": "^13.3.0",
+    "@types/jest": "^28.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "babel-jest": "^28.1.1",
     "eslint": "^8.15.0",
+    "eslint-plugin-react": "^7.30.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.1",
     "mprocs": "^0.2.3",
     "parcel": "^2.5.0",
     "prettier": "^2.6.2",
+    "react-test-renderer": "^18.2.0",
     "typescript": "^4.6.4"
   },
   "dependencies": {
@@ -29,7 +42,8 @@
   "scripts": {
     "build": "parcel build",
     "watch": "parcel watch",
-    "sample": "cd ./example && yarn dev --port 3001",
-    "dev": "mprocs"
+    "dev": "mprocs",
+    "lint": "eslint src",
+    "test": "jest tests --watch"
   }
 }

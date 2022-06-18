@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "lib": ["ES2015", "dom"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -12,8 +13,12 @@
     "declarationDir": "types",
     "sourceMap": true,
     "outDir": "dist",
+    "rootDir": "src",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true
-  }
+
+    "composite": true,
+    "types": []
+  },
+  "include": ["src"]
 }
