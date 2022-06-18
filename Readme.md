@@ -40,6 +40,8 @@ const Item: React.FC = ({ children }) => {
 ## Basics
 
 ```ts
+import { Grid } from "@mahdi_ag/rgrid";
+
 export const Basics: React.FC = () => (
   <>
     <Grid container spacing={2} justifyContent="center">
@@ -63,6 +65,8 @@ export const Basics: React.FC = () => (
 ## Breakpoints And Inhertance
 
 ```ts
+import { Grid } from "@mahdi_ag/rgrid";
+
 export const BreakpointsAndInhertance: React.FC = () => (
   <>
     <Grid container spacing={{ xs: 2, md: 4 }} justifyContent="center">
@@ -86,6 +90,8 @@ export const BreakpointsAndInhertance: React.FC = () => (
 ## Nested Usage
 
 ```ts
+import { Grid } from "@mahdi_ag/rgrid";
+
 export const NestedUsage: React.FC = () => {
   const ChildComponent: React.FC = () => {
     return (
