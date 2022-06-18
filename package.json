@@ -1,5 +1,5 @@
 {
-  "name": "rgrid",
+  "name": "@mahdi_ag/rgrid",
   "version": "0.0.2",
   "description": "A responsive grid component for React",
   "source": "src/index.tsx",
@@ -44,6 +44,10 @@
     "watch": "parcel watch",
     "dev": "mprocs",
     "lint": "eslint src",
-    "test": "jest tests --watch"
+    "test": "jest tests --watch",
+    "pub": "yarn build && yarn publish"
+  },
+  "publishConfig": {
+    "registry": "https://www.npmjs.com/"
   }
 }
