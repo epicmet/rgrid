@@ -7,15 +7,17 @@ export function adjustWidths(
 ) {
   const { isGap } = options;
 
-  let prevVal = isGap ? 1 : 12;
+  let prevValue = isGap ? 1 : 12;
 
-  Object.keys(widths).forEach((k) => {
-    const val = widths[k];
+  Object.keys(widths).forEach((key) => {
+    const value = widths[key];
 
-    if (!val) {
-      widths[k] = prevVal;
-    } else {
-      prevVal = typeof val === "string" ? parseInt(val) : val;
+    if (!value) {
+      widths[key] = prevValue;
+      return;
     }
+
+    const newValue = typeof value === "string" ? parseInt(value) : value;
+    prevValue = newValue;
   });
 }
