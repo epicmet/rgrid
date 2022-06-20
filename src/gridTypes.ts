@@ -1,11 +1,14 @@
 import { HTMLAttributes } from "react";
 
+type AllowedUnits = "px" | "em" | "rem" | "vh" | "vw" | "vmin" | "vmax" | "%";
+
+type BreakPointValue = number | `${number}${AllowedUnits}`;
 export interface Breakpoints {
-  xs?: number | string;
-  sm?: number | string;
-  md?: number | string;
-  lg?: number | string;
-  xl?: number | string;
+  xs?: BreakPointValue;
+  sm?: BreakPointValue;
+  md?: BreakPointValue;
+  lg?: BreakPointValue;
+  xl?: BreakPointValue;
 }
 
 export type BreakPointsSchema = { [key: string]: number | string };
